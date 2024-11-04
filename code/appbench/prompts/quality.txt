@@ -1,0 +1,12 @@
+Please evaluate the given instruction based on the following criteria:
+
+Fluency:
+
+-- Evaluate the prompt's clarity, coherence, and ease of understanding.
+-- Consider factors such as the organization, language flow, and presentation of the prompt.
+
+Diversity:
+
+-- Evaluate the range of topics, perspectives, and related APP and APIs covered by the prompt.
+
+Please only output the overall score considering both of fluency and diversity. The overall score should be a value between 1 and 10, with 10 representing the best.

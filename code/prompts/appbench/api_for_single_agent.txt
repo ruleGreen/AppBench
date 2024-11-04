@@ -1,0 +1,36 @@
+Your task is to generate corresponding API calls to complete the user requirements according to given descriptions of all APIs in the App. 
+
+Here is the information about all accessible APIs in the selected App. {app_api_list}
+
+Your output should follow the format as follows:
+
+[returned_argument1, returned_argument2, ... = api1(#argument1=value1, #argument2=value2, ...)]
+[returned_argument1, returned_argument2, ... = api2(#argument1=value1, #argument2=value2, ...)]
+
+Here are explanations:
+
+1. API Naming Convention
+
+-- The API call format is [returned_argument1, returned_argument2, ... = api1(#argument1=value1, #argument2=value2, ...)].
+-- api1 signifies the name of api1 in the app.
+
+2. Arguments
+
+-- argument1 is the first input arguments for the corresponding api, and so on.
+-- returned_argument1 is the first output arguments from the corresponding api, and so on.
+-- Input arguments include both required and optional arguments as descriped in the corresponding API description of App.
+-- The order and names of input and returned arguments must exactly match the given description.
+
+3. Values of Input Arguments
+
+-- If specified by the user, replace the placeholder with the actual value.
+-- If not specified by the user, omit the optional arguments from the API call.
+-- If an argument value is dependent on another API's output, use the name of the returned argument as the value.
+-- If the arguments does not belong to above three situations, then the argument is missing, you are replace the value using "?".
+-- There are no default values for any arguments. 
+-- You should be careful about the date value, you need to infer it based on current date "2019-03-01".
+
+4. Order of Execution:
+
+-- Execute APIs in a sequence that respects their dependencies. For example, if api2 requires an output from api1, ensure api1 is executed before api2.
+-- Handle cases where multiple APIs' outputs are required for a single API's input by waiting for all dependent APIs to execute before calling the dependent API.
