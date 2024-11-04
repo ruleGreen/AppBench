@@ -42,9 +42,3 @@ You can use the following args to control this procedure:
 - **./appbench/test.py**: main test file
 
 - **./appbench/evaluation.py**: code for evaluating the model results to return the performance
-
-### Note:
-
-1. The testing of OpenAI models are fulfilled when one of the author in Edinburgh physically.
-
-2. If you have any problem on this code, feel free to contact us.
